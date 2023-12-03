@@ -1,8 +1,9 @@
 {
-  "name": "refineddigital/cms-social-media",
-  "description": "Social Media module for RefinedCMS",
+  "name": "refineddigital/cms-shopify-hydrogen",
+  "description": "Shopify Hydrogen integration for RefinedCMS",
   "require": {
-    "refineddigital/cms": "^1.10|dev-master"
+    "refineddigital/cms": "^1.10|dev-master",
+    "shopify/shopify-api": "^3.0"
   },
   "license": "MIT",
   "authors": [
@@ -13,7 +14,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "RefinedDigital\\SocialMedia\\": "src/"
+      "RefinedDigital\\ShopifyHydrogen\\": "src/"
     },
     "files": [
         "src/Module/Helpers/helpers.php"
@@ -22,7 +23,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "RefinedDigital\\SocialMedia\\Module\\Providers\\SocialMediaServiceProvider"
+        "RefinedDigital\\ShopifyHydrogen\\Module\\Providers\\ShopifyHydrogenServiceProvider"
       ],
       "aliases": {
       }
